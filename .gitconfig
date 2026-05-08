@@ -1,0 +1,14 @@
+[user]
+	name = jeongbeen1-svg
+	email = jeongbeen1@gmail.com
+[core]
+	quotepath = false
+	autocrlf = input
+	editor = vim
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[init]
+	defaultbranch = main
+[pull]
+	rebase = false
