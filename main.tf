@@ -52,7 +52,7 @@ resource "aws_security_group" "allow_ssh_new" {
 }
 
 # 4. EC2 인스턴스 생성 (태그 이름 변경 및 퍼블릭 IP 설정 적용)
-resource "aws_instance" "kdt_ec2_new" {
+resource "aws_instance" "kdt_ec2_new_ver_2" {
   ami           = "ami-0c9c942bd7bf113a2" # Ubuntu 22.04 LTS
   instance_type = "t3.small"
   
@@ -64,6 +64,6 @@ resource "aws_instance" "kdt_ec2_new" {
   vpc_security_group_ids = [aws_security_group.allow_ssh_new.id]
 
   tags = {
-    Name = "KDT-Secondary-EC2" # 인스턴스 태그 이름 변경
+    Name = "KDT-Secondary-EC2_ver_2" # 인스턴스 태그 이름 변경
   }
 }
